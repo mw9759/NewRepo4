@@ -150,6 +150,9 @@ void COMokView::OnLButtonDown(UINT nFlags, CPoint point)
 
 		dc.Ellipse(x - 15, y - 15, x + 15, y + 15);
      }
+	else {
+		AfxMessageBox(_T("판 안에서 클릭해 주세요!"));
+     }
 	CView::OnLButtonDown(nFlags, point);
 }
 
@@ -170,7 +173,9 @@ void COMokView::OnRButtonDown(UINT nFlags, CPoint point)
 
 		dc.Ellipse(x - 15, y - 15, x + 15, y + 15);
 	}
-	
+	else {
+		AfxMessageBox(_T("판 안에서 클릭해 주세요!"));
+	}
 	CView::OnRButtonDown(nFlags, point);
 }
 
